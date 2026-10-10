@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="test.SLDASM">
+  <link
+    name="base_link">
+  </link>
+  <link
+    name="1_Link">
+    <inertial>
+      <origin
+        xyz="0 0 0.1"
+        rpy="0 0 0" />
+      <mass
+        value="6" />
+      <inertia
+        ixx="0.6"
+        iyy="0.6"
+        izz="0.6"
+        ixy="-0.01"
+        iyz="-0.01"
+        ixz="-0.01" />
+    </inertial>
+  </link>
+  <joint
+    name="1_joint"
+    type="revolute">
+    <origin
+      xyz="0.0 -0.0 0.0"
+      rpy="0.0 -0.0 0.0" />
+    <parent
+      link="base_link" />
+    <child
+      link="1_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.0543"
+      upper="3.0543"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="2_Link">
+    <inertial>
+      <origin
+        xyz="0.2 0.1 0.1"
+        rpy="0 0 0" />
+      <mass
+        value="5" />
+      <inertia
+        ixx="0.5"
+        iyy="0.5"
+        izz="0.5"
+        ixy="-0.01"
+        iyz="-0.01"
+        ixz="-0.01" />
+    </inertial>
+  </link>
+  <joint
+    name="2_joint"
+    type="revolute">
+    <origin
+      xyz="0.0 0.0 0.0"
+      rpy="-1.5707963267948966 -1.5707963267948966 0" />
+    <parent
+      link="1_Link" />
+    <child
+      link="2_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.0543"
+      upper="3.0543"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="3_Link">
+    <inertial>
+      <origin
+        xyz="0.2 0.1 0"
+        rpy="0 0 0" />
+      <mass
+        value="4" />
+      <inertia
+        ixx="0.4"
+        iyy="0.4"
+        izz="0.4"
+        ixy="-0.01"
+        iyz="-0.01"
+        ixz="-0.01" />
+    </inertial>
+  </link>
+  <joint
+    name="3_joint"
+    type="revolute">
+    <origin
+      xyz="0.4 -0.0 0.02"
+      rpy="0.0 -0.0 1.5707963267948966" />
+    <parent
+      link="2_Link" />
+    <child
+      link="3_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.9671"
+      upper="2.9671"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="4_Link">
+    <inertial>
+      <origin
+        xyz="0 0.1 0.1"
+        rpy="0 0 0" />
+      <mass
+        value="3" />
+      <inertia
+        ixx="0.3"
+        iyy="0.3"
+        izz="0.3"
+        ixy="-0.01"
+        iyz="-0.01"
+        ixz="-0.01" />
+    </inertial>
+  </link>
+  <joint
+    name="4_joint"
+    type="revolute">
+    <origin
+      xyz="0.0 -0.45 2.7554552980815448e-17"
+      rpy="1.5707963267948966 -0.0 0.0" />
+    <parent
+      link="3_Link" />
+    <child
+      link="4_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.0543"
+      upper="3.0543"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="5_Link">
+    <inertial>
+      <origin
+        xyz="0.03 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="2" />
+      <inertia
+        ixx="0.2"
+        iyy="0.2"
+        izz="0.2"
+        ixy="-0.01"
+        iyz="-0.01"
+        ixz="-0.01" />
+    </inertial>
+  </link>
+  <joint
+    name="5_joint"
+    type="revolute">
+    <origin
+      xyz="0.0 0.0 0.0"
+      rpy="-1.5707963267948966 0.0 0.0" />
+    <parent
+      link="4_Link" />
+    <child
+      link="5_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.0543"
+      upper="3.0543"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="6_Link">
+    <inertial>
+      <origin
+        xyz="0 0 0.03"
+        rpy="0 0 0" />
+      <mass
+        value="1" />
+      <inertia
+        ixx="0.1"
+        iyy="0.1"
+        izz="0.1"
+        ixy="-0.01"
+        iyz="-0.01"
+        ixz="-0.01" />
+    </inertial>
+  </link>
+  <joint
+    name="6_joint"
+    type="revolute">
+    <origin
+      xyz="0.0 -0.07 4.286263797015737e-18"
+      rpy="1.5707963267948966 -0.0 0.0" />
+    <parent
+      link="5_Link" />
+    <child
+      link="6_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.0543"
+      upper="3.0543"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
